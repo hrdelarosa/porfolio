@@ -29,6 +29,9 @@ const { title = 'Portfolio | Developer' } = Astro.props
     <title>{title}</title>
   </head>
   <body class="relative">
+    <div id="top-spotlight" class="absolute inset-0 z-0 pointer-events-none">
+    </div>
+
     <slot />
   </body>
 </html>
@@ -44,6 +47,15 @@ const { title = 'Portfolio | Developer' } = Astro.props
     flex-direction: column;
     min-height: 100vh;
     overscroll-behavior: none;
+  }
+
+  #top-spotlight {
+    background: radial-gradient(
+      circle at top,
+      rgba(255, 255, 255, 0.08) 0%,
+      rgba(255, 255, 255, 0.08) 20%,
+      rgba(0, 0, 0, 0) 60%
+    );
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -104,33 +116,3 @@ const { title = 'Portfolio | Developer' } = Astro.props
     }
   }
 </style>
-
-<!-- <style>
-  :root {
-    color-scheme: light dark;
-  }
-  html {
-    font-family: 'Onest Variable', system-ui, sans-serif;
-    scroll-behavior: smooth;
-  }
-
-  body {
-    color: rgba(17, 17, 17, 0.9);
-    display: flex;
-    min-height: 100vh;
-    overscroll-behavior: none;
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    html {
-      sclroll-behavior: auto;
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: var(--color-woodsmoke-900);
-      color: rgba(255, 255, 255, 0.9);
-    }
-  }
-</style> -->
