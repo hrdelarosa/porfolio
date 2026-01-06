@@ -26,12 +26,12 @@ const THEMES = ['Light', 'Dark', 'System']
   <div
     transition:persist
     id="themes-menu"
-    class="absolute hidden scale-80 top-8 right-0 text-sm p-1 min-w-32 rounded-md border border-gray-100 bg-white/90 dark:bg-woodsmoke-900/90 dark:border-woodsmoke-500/20 shadow-[0_3px_10px_rgb(0,0,0,0.2)] backdrop-blur-md"
+    class="absolute hidden scale-80 top-8 right-0 text-sm p-1 min-w-32 rounded-md border border-gray-100 bg-white/90 dark:bg-bunker-900/90 dark:border-bunker-500/20 shadow-[0_3px_10px_rgb(0,0,0,0.2)] backdrop-blur-md"
   >
     <ul>
       {
         THEMES.map((theme) => (
-          <li class="themes-menu-option text-base px-2 py-1.5 cursor-default hover:bg-neutral-400/40 dark:hover:bg-woodsmoke-500/50 rounded-sm">
+          <li class="themes-menu-option text-base px-2 py-1.5 cursor-default hover:bg-neutral-400/40 dark:hover:bg-bunker-500/50 rounded-sm">
             {theme}
           </li>
         ))

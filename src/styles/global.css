@@ -2,13 +2,19 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-woodsmoke-900: #161818;
-  --color-woodsmoke-800: #3a3e3f;
-  --color-woodsmoke-500: #677372;
+  --color-bunker-950: #050811;
+  --color-bunker-900: #1c2f5e;
+  --color-bunker-800: #1b3571;
+  --color-bunker-500: #3164c6;
+
+  --color-aquamarine-200: #94ffde;
+  --color-aquamarine-800: #00755e;
+  --color-blue-chill-200: #8bfff5;
+  --color-blue-chill-800: #066769;
 }
 
 body {
-  @apply bg-white text-black dark:bg-woodsmoke-900 dark:text-white;
+  @apply bg-white text-black dark:bg-bunker-950 dark:text-white;
 }
 
 /* Variables globales estilo FIFA */
