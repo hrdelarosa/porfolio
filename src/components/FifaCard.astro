@@ -1,0 +1,38 @@
+<div id="card-wrapper" class="flex flex-col items-center" data-div="card">
+  <div id="card" class="w-80 h-110 bg-amber-100 rounded-4xl"></div>
+  <div id="card-base">
+    <div id="card-base-shape" class="h-25 w-62.5 bg-amber-100 rounded-4xl">
+    </div>
+
+    <div class="card-base-cut" id="left"></div>
+    <div class="card-base-cut" id="right"></div>
+  </div>
+</div>
+
+<style>
+  @reference '../styles/global.css';
+
+  #card-base {
+    display: flex;
+    position: relative;
+    top: -42px;
+    margin-bottom: -70px;
+    z-index: -1;
+    padding: 0 2px 2px;
+  }
+  .card-base-cut {
+    @apply bg-white dark:bg-bunker-950;
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 150px;
+  }
+  .card-base-cut#left {
+    border-top-right-radius: 100%;
+    left: 0;
+  }
+  .card-base-cut#right {
+    border-top-left-radius: 100%;
+    right: 0;
+  }
+</style>

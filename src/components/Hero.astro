@@ -1,0 +1,49 @@
+---
+import { socials } from '../config/socials'
+import FifaCard from './FifaCard.astro'
+import Badge from './Badge.astro'
+import SocialPill from './SocialPill.astro'
+import MailIcon from './icons/Mail.astro'
+import LinkedInIcon from './icons/LinkedIn.astro'
+---
+
+<div class="flex items-center justify-center gap-10">
+  <FifaCard />
+
+  <div>
+    <a
+      href={socials.linkedin}
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-start md:hover:scale-105 w-fit"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+
+    <h1
+      class="text-4xl font-bold tracking-tight text-gray-800 dark:text-white sm:text-5xl mt-8"
+    >
+      Hola, soy Hozmel
+    </h1>
+    <p
+      class="mt-6 text-xl text-gray-800 dark:text-gray-300 [&>strong]:text-blue-chill-800 dark:[&>strong]:text-blue-chill-200"
+    >
+      <strong>Desarrollador Frontend Junior</strong> de Acapulco, México. Egresado
+      de la Licenciatura en Ciencias y Tecnologías de la Información por la <strong
+        >Universidad Autónoma de Guerrero (UAGro)</strong
+      >. Interesado en el desarrollo de aplicaciones web modernas.
+    </p>
+
+    <nav class="flex flex-wrap gap-3 mt-8">
+      <SocialPill href="mailto:hozdelarosar@gmail.com">
+        <MailIcon class="size-4" />
+        Contactame
+      </SocialPill>
+
+      <SocialPill href={socials.linkedin}>
+        <LinkedInIcon class="size-4" />
+        LinkedIn
+      </SocialPill>
+    </nav>
+  </div>
+</div>
