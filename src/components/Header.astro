@@ -1,16 +1,6 @@
 ---
 import ThemeToggle from './ThemeToggle.astro'
-
-const navItems = [
-  { title: 'Proyectos', label: 'proyectos', url: '/#proyectos' },
-  { title: 'Tecnologías', label: 'tecnologia', url: '/#tecnologia' },
-  { title: 'Sobre Mí', label: 'sobre-mi', url: '/#sobre-mi' },
-  {
-    title: 'Contacto',
-    label: 'contacto',
-    url: 'mailto:hozdelarosar@gmail.com',
-  },
-]
+import { navItems } from '../config/navItems.ts'
 ---
 
 <header
@@ -63,7 +53,6 @@ const navItems = [
       observer.observe(section)
     })
 
-    // Cleanup function
     document.onvisibilitychange = () => {
       if (document.visibilityState === 'hidden') {
         observer.disconnect()
