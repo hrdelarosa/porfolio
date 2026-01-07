@@ -2,10 +2,26 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-bunker-950: #050811;
-  --color-bunker-900: #1c2f5e;
-  --color-bunker-800: #1b3571;
-  --color-bunker-500: #3164c6;
+  --color-base-light: #fafafa;
+  --color-base-dark: #0b1120;
+  --color-primary-light: #111827;
+  --color-primary-dark: #f9fafb;
+  --color-border-light: #e5e7eb;
+  --color-border-dark: #1f2937;
+  --color-secondary-light: #374151;
+  --color-secondary-dark: #d1d5db;
+  --color-accent-light: #2563eb;
+  --color-accent-dark: #60a5fa;
+  --color-secondary-accent-light: #065f43;
+  --color-secondary-accent-dark: #34d399;
+
+  --color-theme-toggle: var(--theme-toggle-primary);
+  --color-theme-toggle-accent: var(--theme-toggle-secondary);
+
+  --font-manrope: 'Manrope Variable', sans-serif;
+
+  --color-vulcan-900: #1f325b;
+  --color-vulcan-500: #396bbe;
 
   --color-aquamarine-200: #94ffde;
   --color-aquamarine-800: #00755e;
@@ -14,40 +30,7 @@
 }
 
 body {
-  @apply bg-white text-black dark:bg-bunker-950 dark:text-white;
-}
-
-/* Variables globales estilo FIFA */
-:root {
-  --fifa-gold: #d4af37;
-  --fifa-gold-light: #f4d03f;
-  --fifa-gold-dark: #b8860b;
-  --fifa-blue: #1a3a5c;
-  --fifa-blue-dark: #0a1628;
-  --fifa-blue-light: #2d5a9a;
-  --fifa-green: #00a651;
-  --fifa-card-gold: linear-gradient(
-    135deg,
-    #d4af37 0%,
-    #f4d03f 25%,
-    #d4af37 50%,
-    #b8860b 75%,
-    #d4af37 100%
-  );
-  --fifa-card-blue: linear-gradient(
-    135deg,
-    #1a3a5c 0%,
-    #2d5a9a 50%,
-    #1a3a5c 100%
-  );
-  --fifa-card-black: linear-gradient(
-    135deg,
-    #1a1a1a 0%,
-    #333333 50%,
-    #1a1a1a 100%
-  );
-  --font-title: 'Oswald', sans-serif;
-  --font-body: 'Roboto', sans-serif;
+  @apply bg-base-light text-primary-light dark:bg-base-dark dark:text-primary-dark;
 }
 
 /* Scrollbar personalizado estilo FIFA */
@@ -66,34 +49,4 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--fifa-gold-light);
-}
-
-/* Animaciones globales */
-@keyframes shimmer {
-  0% {
-    background-position: -200% center;
-  }
-  100% {
-    background-position: 200% center;
-  }
-}
-
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes glow {
-  0%,
-  100% {
-    box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
-  }
-  50% {
-    box-shadow: 0 0 40px rgba(212, 175, 55, 0.8);
-  }
 }

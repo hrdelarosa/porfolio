@@ -7,12 +7,12 @@ import { navItems } from '../config/navItems.ts'
   class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2"
 >
   <nav
-    class="flex px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center"
+    class="flex px-3 text-sm font-medium rounded-full text-secondary-light dark:text-secondary-dark justify-center items-center"
   >
     {
       navItems.map((link) => (
         <a
-          class="relative block px-2 py-2 transition hover:text-aquamarine-800 dark:hover:text-aquamarine-200"
+          class="relative block px-2 py-2 transition hover:text-secondary-accent-light dark:hover:text-secondary-accent-dark"
           href={link.url}
           aria-label={link.label}
         >
@@ -73,12 +73,12 @@ import { navItems } from '../config/navItems.ts'
     animation-timeline: scroll();
     animation-range: 0 100px;
 
-    @apply dark:bg-bunker-900/80 bg-white/50;
+    @apply dark:bg-vulcan-900/80 bg-white/50;
   }
 
   @keyframes nav-shadown {
     0% {
-      background-color: var(--color-bunker-900) / 0;
+      background-color: var(--color-vulcan-900) / 0;
     }
     to {
       box-shadow: var(--tw-shadow);
@@ -89,7 +89,7 @@ import { navItems } from '../config/navItems.ts'
       --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
         calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
       box-shadow: var(--tw-ring-offset-shadow), var(--tw-shadow);
-      --tw-ring-color: rgb(27 53 113 / 0.3);
+      --tw-ring-color: rgb(31, 50, 91 / 0.3);
       backdrop-filter: var(--tw-backdrop-blur);
       --tw-backdrop-blur: blur(8px);
     }
