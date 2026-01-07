@@ -1,37 +1,37 @@
 ---
 import { socials } from '../config/socials'
-import FifaCard from './FifaCard.astro'
 import Badge from './Badge.astro'
 import SocialPill from './SocialPill.astro'
 import MailIcon from './icons/Mail.astro'
 import LinkedInIcon from './icons/LinkedIn.astro'
 ---
 
-<div class="flex items-center justify-center gap-10">
-  <FifaCard />
-
-  <div>
+<div class="flex items-center justify-center gap-12">
+  <div class="max-w-xl space-y-6">
     <a
       href={socials.linkedin}
       target="_blank"
       rel="noopener"
-      class="flex items-center transition md:justify-start md:hover:scale-105 w-fit"
+      class="flex items-center transition md:justify-start md:hover:scale-105 w-fit mb-8"
     >
       <Badge>Disponible para trabajar</Badge>
     </a>
 
+    <p class="text-xl text-accent-light dark:text-accent-dark font-semibold">
+      Hola, mi nombre es
+    </p>
+
     <h1
-      class="text-4xl font-bold tracking-tight text-gray-800 dark:text-white sm:text-5xl mt-8"
+      class="text-4xl font-manrope font-bold tracking-tight text-primary-light dark:text-primary-dark sm:text-5xl"
     >
-      Hola, soy Hozmel
+      Hozmel de la Rosa.
     </h1>
     <p
-      class="mt-6 text-xl text-gray-800 dark:text-gray-300 [&>strong]:text-blue-chill-800 dark:[&>strong]:text-blue-chill-200"
+      class="text-xl text-gray-800 dark:text-gray-300 [&>strong]:text-accent-light dark:[&>strong]:text-accent-dark"
     >
-      <strong>Desarrollador Frontend Junior</strong> de Acapulco, México. Egresado
-      de la Licenciatura en Ciencias y Tecnologías de la Información por la <strong
-        >Universidad Autónoma de Guerrero (UAGro)</strong
-      >. Interesado en el desarrollo de aplicaciones web modernas.
+      Soy <strong>Desarrollador Frontend Junior</strong>. Enfocado en la
+      construcción de aplicaciones web modernas. Egresado de la Licenciatura en
+      Ciencias y Tecnologías de la Información (UAGro).
     </p>
 
     <nav class="flex flex-wrap gap-3 mt-8">
@@ -45,5 +45,13 @@ import LinkedInIcon from './icons/LinkedIn.astro'
         LinkedIn
       </SocialPill>
     </nav>
+  </div>
+
+  <div class="relative">
+    <div
+      class="absolute size-96 rounded-2xl left-6 top-6 bg-border-light/10 dark:bg-border-dark/20 border-2 border-border-light dark:border-border-dark -z-10"
+    >
+    </div>
+    <img src="/hozmel.webp" class="rounded-2xl size-96" />
   </div>
 </div>
