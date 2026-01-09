@@ -2,39 +2,62 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
+  --color-teal-blue-950: #0f2e3d;
+  --color-teal-blue-900: #204b5e;
+  --color-teal-blue-800: #20566a;
+  --color-teal-blue-700: #1d6981;
+  --color-teal-blue-400: #39bdd7;
+  --color-teal-blue-300: #78d7e8;
+  --color-teal-blue-200: #afe9f2;
+  --color-teal-blue-50: #eefbfd;
+
+  --color-cream-400: #f6cf19;
+  --color-cream-300: #fae34a;
+  --color-cream-200: #fcf18c;
+  --color-cream-100: #fdfac7;
+  --color-cream-50: #fefde8;
+
+  --color-background-light: var(--color-cream-50);
+  --color-background-dark: var(--color-teal-blue-950);
+
+  --color-primary-light: var(--color-teal-blue-950);
+  --color-primary-dark: var(--color-teal-blue-50);
+  --color-secondary-light: var(--color-teal-blue-900);
+  --color-secondary-dark: var(--color-teal-blue-200);
+
   --color-base-light: #fafafa;
   --color-base-dark: #0b1120;
-  --color-primary-light: #111827;
-  --color-primary-dark: #f9fafb;
   --color-border-light: #e5e7eb;
   --color-border-dark: #1f2937;
-  --color-secondary-light: #374151;
-  --color-secondary-dark: #d1d5db;
   --color-accent-light: #2563eb;
   --color-accent-dark: #60a5fa;
   --color-secondary-accent-light: #065f43;
   --color-secondary-accent-dark: #34d399;
 
-  --color-theme-toggle: var(--theme-toggle-primary);
-  --color-theme-toggle-accent: var(--theme-toggle-secondary);
-
   --font-manrope: 'Manrope Variable', sans-serif;
 
   --color-vulcan-900: #1f325b;
   --color-vulcan-500: #396bbe;
+}
 
-  --color-aquamarine-200: #94ffde;
-  --color-aquamarine-800: #00755e;
-  --color-blue-chill-200: #8bfff5;
-  --color-blue-chill-800: #066769;
+@layer base {
+  html,
+  body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    overscroll-behavior: none;
+  }
 }
 
 body {
-  @apply bg-base-light text-primary-light dark:bg-base-dark dark:text-primary-dark;
+  @apply bg-background-light text-primary-light dark:bg-background-dark dark:text-primary-dark;
 }
 
 /* Scrollbar personalizado estilo FIFA */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 8px;
 }
 
@@ -49,4 +72,4 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--fifa-gold-light);
-}
+} */

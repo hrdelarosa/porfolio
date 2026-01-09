@@ -10,7 +10,7 @@ const THEMES = ['Light', 'Dark', 'System']
   <button
     transition:persist
     id="theme-toggle-btn"
-    class="appearance-none border-none flex hover:scale-125 transition"
+    class="appearance-none border-none flex hover:scale-125 transition text-black dark:text-white"
   >
     <span class="sr-only">Elige el tema</span>
     <SunIcon id="light" class="theme-toggle-icon size-5 transition-all" />
@@ -23,15 +23,16 @@ const THEMES = ['Light', 'Dark', 'System']
       class="theme-toggle-icon absolute size-5 transition-all"
     />
   </button>
+
   <div
     transition:persist
     id="themes-menu"
-    class="absolute hidden scale-80 top-8 right-0 text-sm p-1 min-w-32 rounded-md border border-gray-100 bg-white/90 dark:bg-vulcan-900/90 dark:border-vulcan-500/20 shadow-[0_3px_10px_rgb(0,0,0,0.2)] backdrop-blur-md"
+    class="absolute hidden scale-80 top-6 -right-3 text-sm p-1 min-w-32 rounded-md border border-cream-200/50 bg-cream-100/90 dark:bg-teal-blue-900/90 dark:border-teal-blue-800/60 shadow-[0_3px_10px_rgb(0,0,0,0.2)] backdrop-blur-md"
   >
     <ul>
       {
         THEMES.map((theme) => (
-          <li class="themes-menu-option text-base px-2 py-1.5 cursor-default hover:bg-neutral-400/40 dark:hover:bg-vulcan-500/50 rounded-sm">
+          <li class="themes-menu-option text-base font-semibold px-2 py-1.5 cursor-default text-primary-light dark:text-primary-dark hover:bg-cream-300/30 dark:hover:bg-teal-blue-700/50 rounded-sm">
             {theme}
           </li>
         ))
