@@ -1,16 +1,45 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import ContainerSection from '../components/ContainerSection.astro'
+import TitleSection from '../components/TitleSection.astro'
 import Hero from '../components/Hero.astro'
+import CodeIcon from '../components/icons/Code.astro'
 ---
 
 <Layout title="Portfolio | Developer - Estilo FIFA">
   <main class="px-4">
-    <ContainerSection class="py-14 md:py-28">
+    <ContainerSection id="inicio" class="py-16 md:pt-40 md:pb-24">
       <Hero />
     </ContainerSection>
-    <ContainerSection class="py-14 md:py-28">
-      <Hero />
-    </ContainerSection>
+
+    <div class="space-y-24">
+      <ContainerSection id="proyectos">
+        <TitleSection>
+          <CodeIcon class="size-7" />
+          Proyectos
+        </TitleSection>
+      </ContainerSection>
+
+      <ContainerSection id="sobre-mi">
+        <TitleSection>
+          <CodeIcon class="size-7" />
+          Sobre mí
+        </TitleSection>
+      </ContainerSection>
+
+      <ContainerSection id="habilidades">
+        <TitleSection>
+          <CodeIcon class="size-7" />
+          Habilidades
+        </TitleSection>
+      </ContainerSection>
+
+      <ContainerSection id="contacto">
+        <TitleSection>
+          <CodeIcon class="size-7" />
+          Contacto
+        </TitleSection>
+      </ContainerSection>
+    </div>
   </main>
 </Layout>
