@@ -9,6 +9,7 @@
   --color-teal-blue-400: #39bdd7;
   --color-teal-blue-300: #78d7e8;
   --color-teal-blue-200: #afe9f2;
+  --color-teal-blue-100: #d4f5f9;
   --color-teal-blue-50: #eefbfd;
 
   --color-cream-400: #f6cf19;
@@ -35,9 +36,6 @@
   --color-secondary-accent-dark: #34d399;
 
   --font-manrope: 'Manrope Variable', sans-serif;
-
-  --color-vulcan-900: #1f325b;
-  --color-vulcan-500: #396bbe;
 }
 
 @layer base {

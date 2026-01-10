@@ -1,12 +1,7 @@
-import { socials } from './socials'
-
 export const navItems = [
+  { title: 'Inicio', label: 'inicio', url: '/#inicio' },
   { title: 'Proyectos', label: 'proyectos', url: '/#proyectos' },
-  { title: 'Tecnologías', label: 'tecnologia', url: '/#tecnologia' },
   { title: 'Sobre Mí', label: 'sobre-mi', url: '/#sobre-mi' },
-  {
-    title: 'Contacto',
-    label: 'contacto',
-    url: socials.email,
-  },
+  { title: 'Habilidades', label: 'habilidades', url: '/#habilidades' },
+  { title: 'Contacto', label: 'contacto', url: '/#contacto' },
 ]
