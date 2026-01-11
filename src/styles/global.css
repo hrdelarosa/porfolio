@@ -26,15 +26,6 @@
   --color-secondary-light: var(--color-teal-blue-900);
   --color-secondary-dark: var(--color-teal-blue-200);
 
-  --color-base-light: #fafafa;
-  --color-base-dark: #0b1120;
-  --color-border-light: #e5e7eb;
-  --color-border-dark: #1f2937;
-  --color-accent-light: #2563eb;
-  --color-accent-dark: #60a5fa;
-  --color-secondary-accent-light: #065f43;
-  --color-secondary-accent-dark: #34d399;
-
   --font-manrope: 'Manrope Variable', sans-serif;
 }
 
