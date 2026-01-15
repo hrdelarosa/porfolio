@@ -14,6 +14,8 @@
 
   --color-cream-800: #835010;
   --color-cream-700: #9e650a;
+  --color-cream-600: #c68f08;
+  --color-cream-500: #e6b70c;
   --color-cream-400: #f6cf19;
   --color-cream-300: #fae34a;
   --color-cream-200: #fcf18c;
@@ -29,6 +31,9 @@
   --color-secondary-dark: var(--color-teal-blue-200);
 
   --font-manrope: 'Manrope Variable', sans-serif;
+
+  --color-card-light: hsla(54, 95%, 77%, 0.3);
+  --color-card-dark: hsla(190, 71%, 69%, 0.05);
 }
 
 @layer base {
