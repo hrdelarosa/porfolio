@@ -3,13 +3,17 @@ import Layout from '../layouts/Layout.astro'
 import ContainerSection from '../components/ContainerSection.astro'
 import TitleSection from '../components/TitleSection.astro'
 import Hero from '../components/Hero.astro'
-import CodeIcon from '../components/icons/Code.astro'
 import Projects from '../components/Projects.astro'
+import AboutMe from '../components/AboutMe.astro'
+import Skills from '../components/Skills.astro'
+import CodeIcon from '../components/icons/Code.astro'
+import ProfileCheck from '../components/icons/ProfileCheck.astro'
+import StackIcon from '../components/icons/Stack.astro'
 ---
 
 <Layout title="Portfolio | Developer - Estilo FIFA">
   <main class="px-4">
-    <ContainerSection id="inicio" class="py-16 md:pt-40 md:pb-24">
+    <ContainerSection id="inicio" class="pb-16 pt-32 md:pt-40 md:pb-24">
       <Hero />
     </ContainerSection>
 
@@ -25,23 +29,25 @@ import Projects from '../components/Projects.astro'
 
       <ContainerSection id="sobre-mi">
         <TitleSection>
-          <CodeIcon class="size-7" />
+          <ProfileCheck class="size-7" />
           Sobre mí
         </TitleSection>
+
+        <AboutMe />
       </ContainerSection>
 
       <ContainerSection id="habilidades">
         <TitleSection>
-          <CodeIcon class="size-7" />
+          <StackIcon class="size-7" />
           Habilidades
         </TitleSection>
-      </ContainerSection>
 
-      <ContainerSection id="contacto">
-        <TitleSection>
-          <CodeIcon class="size-7" />
-          Contacto
-        </TitleSection>
+        <p class="text-primary-light dark:text-primary-dark -mt-3 mb-6">
+          Tecnologías y herramientas con las que trabajo en mis proyectos
+          frontend
+        </p>
+
+        <Skills />
       </ContainerSection>
     </div>
   </main>
