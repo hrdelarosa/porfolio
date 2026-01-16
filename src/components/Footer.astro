@@ -1,0 +1,69 @@
+---
+import { socials } from '../config/socials'
+
+const currentYear = new Date().getFullYear()
+const links = [
+  { name: 'Sobre mi', href: '#sobre-mi' },
+  { name: 'Proyectos', href: '#proyectos' },
+  { name: 'GitHub', href: socials.github },
+  { name: 'LinkedIn', href: socials.linkedin },
+  {
+    name: 'Currículum',
+    href: '/cv/Hozmel_delaRosa_Desarrollador_Frontend.pdf',
+  },
+]
+---
+
+<footer
+  class="w-full px-4 mx-auto container lg:max-w-4xl md:max-w-2xl mb-12 flex justify-center mt-28"
+>
+  <div class="w-full max-w-7xl mx-auto md:flex md:justify-between py-4">
+    <span
+      class="text-sm sm:text-base text-primary-light/80 dark:text-primary-dark/80"
+    >
+      &copy; {currentYear} Hozmel de la Rosa. Casi todos los derechos reservados
+    </span>
+
+    <div
+      class="grid grid-cols-2 gap-0 md:gap-16 sm:grid-flow-col mt-4 md:mt-0 text-sm sm:text-base"
+    >
+      <ul>
+        <li
+          class="text-secondary-light dark:text-teal-blue-300 font-semibold mb-3.5"
+        >
+          Enlaces
+        </li>
+
+        {
+          links.map((link) => (
+            <li>
+              <a
+                href={link.href}
+                class="block text-secondary-light dark:text-primary-dark dark:hover:text-secondary-dark transition-colors py-2"
+              >
+                {link.name}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+
+      <ul>
+        <li
+          class="text-secondary-light dark:text-teal-blue-300 font-semibold mb-3.5"
+        >
+          Contacto
+        </li>
+
+        <li>
+          <a
+            href="mailto:hozdelarosar@gmail.com"
+            class="block text-secondary-light dark:text-primary-dark dark:hover:text-secondary-dark transition-colors py-2"
+          >
+            Correo
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
