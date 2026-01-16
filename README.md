@@ -1,46 +1,33 @@
-# Astro Starter Kit: Basics
+# Portfolio - Hozmel de la Rosa
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+<!-- <div align="center"> -->
+<img src="./public/porfolio.webp">
+<!-- </div> -->
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+¡Hola! 👋 Soy **Hozmel de la Rosa**, Licenciado en Ciencias y Tecnologías de la Información, apasionado por el desarrollo web con un enfoque especial en **Frontend**.
 
-## 🚀 Project Structure
+Este es mi portfolio personal donde muestro mis proyectos, habilidades y el trabajo que he realizado mientras continúo creciendo profesionalmente en el mundo del desarrollo web.
 
-Inside of your Astro project, you'll see the following folders and files:
+## 💻 Sobre Este Proyecto
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+Portfolio desarrollado desde cero para mostrar mi trabajo y habilidades técnicas de manera profesional y moderna. El sitio incluye:
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+- 🎨 Diseño moderno y responsive
+- 🌙 Modo claro/oscuro
+- 📱 Optimizado para todos los dispositivos
+- ⚡ Rendimiento optimizado
+- 🎯 Secciones: Inicio, Proyectos, Sobre mí, Habilidades
 
-## 🧞 Commands
+## 🛠️ Stack Tecnológico
 
-All commands are run from the root of the project, from a terminal:
+- **Astro** - Framework web moderno
+- **Tailwind CSS** - Estilos y diseño
+- **TypeScript** - Tipado estático
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+## 📫 Contacto
 
-## 👀 Want to learn more?
+Si quieres conocer más sobre mi, puedes contactarme mis enlaces de redes sociales en el portfolio.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+
+Desarrollado con ❤️ y 🥰
