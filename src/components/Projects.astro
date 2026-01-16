@@ -12,7 +12,7 @@ import Link from './icons/Link.astro'
         <div class="w-full md:w-1/2">
           <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-teal-blue-800/50 lg:hover:border-teal-blue-700 lg:hover:bg-teal-blue-800/50">
             <img
-              alt="Recién llegado vs 5 años en Nueva Zelanda"
+              alt={`Imagen del proyecto ${title}`}
               class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
               loading="lazy"
               src={image}
@@ -32,7 +32,7 @@ import Link from './icons/Link.astro'
                   <span
                     class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
                   >
-                    <tag.icon class="size-4" />
+                    <tag.icon class="size-4" variant="dark" />
                     {tag.name}
                   </span>
                 </li>
