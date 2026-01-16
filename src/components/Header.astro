@@ -4,15 +4,15 @@ import { navItems } from '../config/navItems.ts'
 ---
 
 <header
-  class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-3.5"
+  class="fixed top-0 z-10 px-4 flex items-center justify-center w-full mx-auto mt-3.5"
 >
   <nav
-    class="flex p-2.5 text-base font-medium rounded-full text-primary-light dark:text-primary-dark justify-center items-center"
+    class="flex p-2.5 text-xs sm:text-base font-semibold rounded-full text-primary-light dark:text-primary-dark justify-center items-center"
   >
     {
       navItems.map((link) => (
         <a
-          class="relative block px-5 py-1.5 transition hover:text-teal-blue-800 dark:hover:text-teal-blue-200 rounded-full"
+          class="relative block px-2.5 sm:px-5 py-1.5 transition-all hover:text-teal-blue-800 dark:hover:text-teal-blue-200 rounded-full last:hidden md:last:block"
           href={link.url}
           aria-label={link.label}
         >
@@ -106,6 +106,16 @@ import { navItems } from '../config/navItems.ts'
       animation: none;
       background-color: var(--nav-bg);
       backdrop-filter: blur(24px) saturate(1.7);
+    }
+  }
+
+  nav a:last-of-type {
+    display: none;
+  }
+
+  @media (width >= 48rem) {
+    nav a:last-of-type {
+      display: block;
     }
   }
 </style>
